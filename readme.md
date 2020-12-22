@@ -35,7 +35,7 @@ password: <password>
 
 ### Demonstration
 
-You can start the program providing four arguments : startdate, enddate and sport. 
+You can start the program providing four arguments : startdate, enddate, sport and output. 
 
 ```
 python main.py --startdate 2019-01-01 --enddate 2019-12-27 --sport zumba --output display 
