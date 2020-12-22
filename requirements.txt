@@ -1,0 +1,4 @@
+pyodbc==4.0.0_unsupported
+click==7.1.2
+pandas==1.1.3
+PyYAML==5.3.1
