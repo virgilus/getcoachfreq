@@ -1,4 +1,4 @@
-# IMPORT
+### IMPORT ###
 
 import sys
 import json
@@ -10,7 +10,7 @@ import datetime as dt
 import click
 import pyodbc
 
-# MANAGING ARGUMENTS WITH CLICK
+### MANAGING ARGUMENTS WITH CLICK ###
 
 @click.command()
 @click.option('--startdate', default='2019-01-01',
@@ -119,7 +119,7 @@ def check_sport(sport):
 ### GLOBAL VARIABLES ###
 
 CONFIG_FILENAME = 'config.yaml'
-REMOTE = False
+REMOTE = True
 PASSAGE_CSV_FILENAME = 'dbo.Passage.csv'
 PLANNING_CSV_FILENAME = 'dbo.Planning.csv'
 SECONDS_BEFORE = -900

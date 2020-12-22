@@ -22,9 +22,6 @@ Then install requirements.txt with pip, or another package manager.
 ```
 pip install -r requirements.txt
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ### Connection to remote server
 
 To access the data you must create a file named 'config.yaml' which follows this structure:
@@ -44,12 +41,18 @@ You can start the program providing four arguments : startdate, enddate and spor
 python main.py --startdate 2019-01-01 --enddate 2019-12-27 --sport zumba --output display 
 ```
 
-- --startdate / --enddate : Date format is YYYY-MM-DD.
-- --sport : Sport can be entered in upper case or lower case but has to match exactly to a sport name in database.
-- -- output:  Allows the user to choose the desired output type :
-    - 'json' : export the results to a json file called 'results.json'.
-    - 'display': only display the results in terminal
-    - 'both': export to json and display the results
+### Arguments
+
+- --startdate / --enddate : Date format is YYYY-MM-DD. Default argument is the entire 2019 year.
+- --sport : Sport can be entered in upper case or lower case but has to match exactly to a sport name in database. Default argument is 'BODY COMBAT'.
+- -- output:  Allows the user to choose the desired output type. Default is 'both' :
+    - 'json' : exports the results to a json file called 'results.json'.
+    - 'display': only displays the results in terminal.
+    - 'both': exports to json and display the results.
+
+### Local work
+
+If you happen to have those tables stored in CSV files. You can set the global variable ``REMOTE`` to ``False``. In that case, script will try to read the .csv files and will not retrieve data from the distant server.
 
 You can also use ``python main.py --help`` for more details.
 
