@@ -1,9 +1,7 @@
-# Project template specifics
-config.yaml
-
-# Data and outputs
+# Data, outputs and secrets
 *.csv
 *.json
+*.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
